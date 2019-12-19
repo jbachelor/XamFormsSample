@@ -7,7 +7,9 @@
     xmlns:tabs="clr-namespace:Sharpnado.Presentation.Forms.CustomViews.Tabs;assembly=Sharpnado.Presentation.Forms"
     mc:Ignorable="d"
     x:Class="XamFormsSample.Views.MainPage">
-    <ContentPage.Resources>
+<!-- If you comment out the style defined for tabs:BottomTabItem in App.xaml
+    and comment this section in, the app will run fine. -->
+    <!--<ContentPage.Resources>
         <ResourceDictionary>
             <Style
                 TargetType="tabs:BottomTabItem">
@@ -25,7 +27,7 @@
                     Value="32" />
             </Style>
         </ResourceDictionary>
-    </ContentPage.Resources>
+    </ContentPage.Resources>-->
     <Grid
         ColumnSpacing="0"
         RowSpacing="0"

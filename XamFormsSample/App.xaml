@@ -4,8 +4,27 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:d="http://xamarin.com/schemas/2014/forms/design"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:tabs="clr-namespace:Sharpnado.Presentation.Forms.CustomViews.Tabs;assembly=Sharpnado.Presentation.Forms"
     mc:Ignorable="d"
     x:Class="XamFormsSample.App">
     <Application.Resources>
+        <Style
+            TargetType="tabs:BottomTabItem">
+            <Setter
+                Property="SelectedTabColor"
+                Value="Red" />
+            <Setter
+                Property="UnselectedIconColor"
+                Value="Gray" />
+<!-- If you comment IsTextVisible=False out, or set it to "True", the app will run fine.
+            Alternatively, if you declare this style in the page where the TabHostView lives
+            this will work fine, even with IsTextVisible=False. -->
+            <Setter
+                Property="IsTextVisible"
+                Value="False" />
+            <Setter
+                Property="IconSize"
+                Value="32" />
+        </Style>
     </Application.Resources>
 </Application>
