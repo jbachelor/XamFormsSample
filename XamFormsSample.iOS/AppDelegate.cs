@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 
 using Foundation;
+using Sharpnado.Presentation.Forms.iOS;
 using UIKit;
 
 namespace XamFormsSample.iOS
@@ -23,6 +24,9 @@ namespace XamFormsSample.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             global::Xamarin.Forms.Forms.Init();
+
+            SharpnadoInitializer.Initialize();
+
             LoadApplication(new App());
 
             return base.FinishedLaunching(app, options);
