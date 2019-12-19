@@ -1,12 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
+using XamFormsSample.ViewModels;
 
-namespace XamFormsSample
+namespace XamFormsSample.Views
 {
     // Learn more about making custom code visible in the Xamarin.Forms previewer
     // by visiting https://aka.ms/xamarinforms-previewer
@@ -15,7 +17,9 @@ namespace XamFormsSample
     {
         public MainPage()
         {
+            Debug.WriteLine($"**** {this.GetType().Name}:  ctor");
             InitializeComponent();
+            BindingContext = new MainPageViewModel();
         }
     }
 }

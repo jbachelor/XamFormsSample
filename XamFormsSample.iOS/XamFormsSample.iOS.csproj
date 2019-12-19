@@ -110,6 +110,12 @@
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon20.png">
       <Visible>false</Visible>
     </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\tabgrid.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\tabgrid.imageset\icons8-grid-view-96.png" />
+    <ImageAsset Include="Assets.xcassets\tabhome.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\tablist.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\tabhome.imageset\icons8-house-96.png" />
+    <ImageAsset Include="Assets.xcassets\tablist.imageset\icons8-list-96.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -132,5 +138,10 @@
       <Project>{B640C57E-F3A6-4B53-BB2A-5BD3971A540D}</Project>
       <Name>XamFormsSample</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assets.xcassets\tabgrid.imageset\" />
+    <Folder Include="Assets.xcassets\tabhome.imageset\" />
+    <Folder Include="Assets.xcassets\tablist.imageset\" />
   </ItemGroup>
 </Project>

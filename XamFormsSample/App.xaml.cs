@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Diagnostics;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using XamFormsSample.Views;
 
 namespace XamFormsSample
 {
@@ -15,17 +17,20 @@ namespace XamFormsSample
 
         protected override void OnStart()
         {
-            // Handle when your app starts
+            Debug.WriteLine($"**** {this.GetType().Name}.{nameof(OnStart)}");
+            base.OnStart();
         }
 
         protected override void OnSleep()
         {
-            // Handle when your app sleeps
+            Debug.WriteLine($"**** {this.GetType().Name}.{nameof(OnSleep)}");
+            base.OnSleep();
         }
 
         protected override void OnResume()
         {
-            // Handle when your app resumes
+            Debug.WriteLine($"**** {this.GetType().Name}.{nameof(OnResume)}");
+            base.OnResume();
         }
     }
 }

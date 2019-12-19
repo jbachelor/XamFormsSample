@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:tabs="clr-namespace:Sharpnado.Presentation.Forms.CustomViews.Tabs;assembly=Sharpnado.Presentation.Forms"
+    mc:Ignorable="d"
+    x:Class="XamFormsSample.Views.MainPage">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style
+                TargetType="tabs:BottomTabItem">
+                <Setter
+                    Property="SelectedTabColor"
+                    Value="Red" />
+                <Setter
+                    Property="UnselectedIconColor"
+                    Value="Gray" />
+                <Setter
+                    Property="IsTextVisible"
+                    Value="False" />
+                <Setter
+                    Property="IconSize"
+                    Value="32" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <Grid
+        ColumnSpacing="0"
+        RowSpacing="0"
+        Padding="0"
+        Margin="0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition
+                x:Name="MainContentRow"
+                Height="*" />
+            <RowDefinition
+                x:Name="TabBarRow"
+                Height="75" />
+        </Grid.RowDefinitions>
+        <StackLayout
+            Grid.Row="0"
+            Grid.Column="0">
+            <Label
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="Center"
+                Text="Main page content goes here"
+                FontAttributes="Bold" />
+        </StackLayout>
+        <tabs:TabHostView
+            Grid.Row="1"
+            Grid.Column="0"
+            SelectedIndex="{Binding SelectedTab, Mode=TwoWay}"
+            BackgroundColor="White"
+            ShadowType="Top"
+            TabType="Fixed">
+            <tabs:TabHostView.Tabs>
+                <tabs:BottomTabItem
+                    IconImageSource="tabhome" />
+                <tabs:BottomTabItem
+                    IconImageSource="tablist" />
+                <tabs:BottomTabItem
+                    IconImageSource="tabgrid" />
+            </tabs:TabHostView.Tabs>
+        </tabs:TabHostView>
+    </Grid>
+</ContentPage>
