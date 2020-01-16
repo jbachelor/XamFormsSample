@@ -1,18 +1,8 @@
-# XamFormsSample
-This is a very plain, blank, Xamarin.Forms app I use as a starting point to create examples and reproduce bugs I run into during development.
+# XamFormsSample: SVG support with FFImageLoading
+This repo has an example of using svg images in a Xamarin.Forms app, utilizing the [FFImageLoading](https://github.com/luberda-molinet/FFImageLoading) library.
 
-Issues I encounter will be reproduced in this app on a branch for each issue:
+As I was working with SVGs, I found some cool ones on <a target="_blank" href="https://icons8.com/icons/set/google-logo">Google icon</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>. You'll see these in the ['SVGs' folder](https://github.com/jbachelor/XamFormsSample/tree/svg/XamFormsSample/SVGS). There is the original one I downloaded, and then the modified one. At this point in time, only the modified svg will display in a Xamarin.Forms app. 
 
----
-## [Sharpnado Branch](https://github.com/jbachelor/XamFormsSample/tree/sharpnadoIsTextVisibleIssue)
-* Implements a TabHostView with three tabs.
-* Based on:
-    * [Sharpnado tabs repo](https://github.com/roubachof/Sharpnado.Presentation.Forms)
-    * [Sharpnado tabs sample app](https://github.com/roubachof/Xamarin-Forms-Practices)
-    * [Sharpnado tabs blog post](https://www.sharpnado.com/pure-xamarin-forms-tabs/)
-* Reproduces https://github.com/roubachof/Sharpnado.Presentation.Forms/issues/95
+I'm fairly new to svg images, so I cannot tell you if the modifications I've made are truly safe, or good... So please beware!
 
----
-## [Akavache Branch](https://github.com/jbachelor/XamFormsSample/tree/akavache)
-* Based on [Akavache repo](https://github.com/reactiveui/Akavache)
-* Reproduces https://github.com/reactiveui/Akavache/issues/517
+![Screenshot of iPhone Showing SVG Images](ReadmeResources/svgSample.png)
