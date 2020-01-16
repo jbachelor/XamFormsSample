@@ -8,5 +8,16 @@
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="4.4.0.991265" />
     <PackageReference Include="Xamarin.Essentials" Version="1.3.1" />
+    <PackageReference Include="Xamarin.FFImageLoading.Svg.Forms" Version="2.4.11.982" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="SVGS\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="SVGS\toys24px.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SVGS\google_modified.svg" />
+    <EmbeddedResource Include="SVGS\toys24px.svg" />
   </ItemGroup>
 </Project>

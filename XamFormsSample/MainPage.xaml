@@ -4,13 +4,30 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:d="http://xamarin.com/schemas/2014/forms/design"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:ff="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms"
     mc:Ignorable="d"
+    BackgroundColor="Brown"
+    Padding="20,75"
     x:Class="XamFormsSample.MainPage">
-    <StackLayout>
-        <!-- Place new controls here -->
-        <Label
-            Text="Welcome to Xamarin.Forms!"
-            HorizontalOptions="Center"
-            VerticalOptions="CenterAndExpand" />
-    </StackLayout>
+    <Frame>
+        <StackLayout
+            VerticalOptions="Center">
+            <ff:SvgCachedImage
+                BackgroundColor="Beige"
+                Source="resource://XamFormsSample.SVGS.toys24px.svg" />
+            <!-- Note that google_original.svg will NOT display. I don't know if I've done something horrible, but I don't think so.
+            I simply removed some things that looked like xmlns aliases and put the long form url where the aliases
+            had been used. Badda-boom, badda-bing, svg action, as shown in google_modified.svg. -->
+            <ff:SvgCachedImage
+                BackgroundColor="DarkKhaki"
+                WidthRequest="100"
+                HeightRequest="100"
+                Source="resource://XamFormsSample.SVGS.google_original.svg" />
+            <ff:SvgCachedImage
+                BackgroundColor="Aqua"
+                WidthRequest="100"
+                HeightRequest="100"
+                Source="resource://XamFormsSample.SVGS.google_modified.svg" />            
+        </StackLayout>
+    </Frame>
 </ContentPage>
