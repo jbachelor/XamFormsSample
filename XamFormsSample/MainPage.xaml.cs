@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Diagnostics;
 using Xamarin.Forms;
 
 namespace XamFormsSample
@@ -15,6 +16,7 @@ namespace XamFormsSample
     {
         public MainPage()
         {
+            Debug.WriteLine($"**** {this.GetType().Name}.{nameof(MainPage)}");
             InitializeComponent();
         }
     }
