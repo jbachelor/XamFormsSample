@@ -16,7 +16,7 @@ namespace XamFormsSample
     {
         public MainPage()
         {
-            Debug.WriteLine($"**** {this.GetType().Name}.{nameof(MainPage)}");
+            Debug.WriteLine($"**** {this.GetType().Name}.{nameof(MainPage)}:  ctor");
             InitializeComponent();
         }
     }
